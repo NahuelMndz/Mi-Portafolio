@@ -1,6 +1,7 @@
 import { faComment, faEnvelope, faPaperPlane, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faFileArrowDown, faLocationDot, faTag } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import cv from '../assets/Nahuel-Menendez-cv.pdf'
 import React from 'react'
 
 function Contact() {
@@ -20,15 +21,15 @@ function Contact() {
           <div className='contact-card'>
             <span className='icon-container-contact'><FontAwesomeIcon icon={faEnvelope} /></span>
             <div className='flex-container-contact'>
-              <h2 className='h2-contact'>Email</h2>
-              <p className='p-contact'>Mi_correo@gmail.com</p>
+              <h2 className='h2-contact'>Telefono</h2>
+              <p className='p-contact'>+54 9 342 629 9961</p>
               </div>
           </div>
           <div className='contact-card'>
             <span className='icon-container-contact'><FontAwesomeIcon icon={faFileArrowDown} /></span>
             <div className='flex-container-contact'>
               <h2 className='h2-contact'>Mi curriculum</h2>
-              <p className='p-contact'><a className='cv-link' href="#">Click aqui para <i className='download'>Descargar</i>!</a></p>
+              <p className='p-contact'><a className='cv-link' href={cv} download={'CV-nahuel-menendez.pdf'}>Click aqui para <i className='download'>Descargar</i>!</a></p>
               </div>
           </div>
         </div>

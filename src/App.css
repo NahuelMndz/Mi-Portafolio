@@ -1,8 +1,12 @@
-.container-portafolio{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+body{
+    overflow: hidden;
+}
 
+.container-portafolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 100%;
 }
 /* NAV */
 .container-nav{
@@ -13,6 +17,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .container-nav-first{
@@ -21,11 +29,19 @@
 }
 
 .perfil-img{
-    width: 150px;
-    height: 150px;
+    width: 50%;
+    height: auto;
     border: 2px solid white;
     border-radius: 50%;
     margin: 10px 0;
+}
+
+.h2-nav{
+    font-size: 1.7rem;
+}
+
+.span-h2-nav{
+    color: #ec9a1e;
 }
 
 .container-nav-second{
@@ -33,10 +49,19 @@
     flex-direction: column;
 }
 
+.container-nav-second-movil{
+    display: none;
+}
+
 .navlink{
     color: #fff;
-    font-size: 24px;
+    font-size: 1.7rem;
     margin: 20px 0px;
+}
+
+.navlink:hover{
+    color: #ec9a1e;
+    transition: 0.4s ease;
 }
 
 .container-nav-third{
@@ -45,13 +70,20 @@
 }
 
 .container-nav-third a{
-    font-size: 25px;
+    font-size: 1.8rem;
     color: #fff;
     margin: 5px;
 }
+
+.container-nav-third a:hover{
+    color: #ec9a1e;
+    transition: 0.4s ease;
+}
+
 /* MAIN */
 .container-main{
     width: 80%;
+    height: 100%;
     background-image: linear-gradient(
                       rgba(0,0,0,0.7),  
                       rgba(0,0,0,0.4)),
@@ -59,20 +91,20 @@
     background-size: cover;
     background-position: center;
     color: #fff;
-}
+    }
 
 /* INICIO */
 .container-home{
+    height: 100vh;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     justify-content: start;
 }
 
 .title-name{
-    font-size: 95px;
+    font-size: 6rem;
     font-weight: 800;
   background: linear-gradient(
     90deg,
@@ -96,24 +128,27 @@
 }
 
 .subtitle-name{
-    font-size: 55px;
+    font-size: 4rem;
     font-weight: 400;
     padding: 150px 0 25px 0;
     margin-top: 50px;
 }
 
 .container-arrow{
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+    margin: auto;
 }
 
 .arrow-down{
-    font-size: 65px;
+    font-size: 4rem;
     animation: bounce 1.5s infinite;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -132,7 +167,7 @@
 /* SOBRE MI */
 .main-container-aboutme{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -141,7 +176,7 @@
 .first-container-aboutme{
     background-color: #27272A;
     border-radius: 15px;
-    width: 1230px;
+    width: 80%;
     height: auto;
     padding: 50px;
     display: flex;
@@ -169,11 +204,15 @@
 }
 
 .p-aboutme{
-    font-size: 32px;
-    font-weight: 300;
-    font-style: italic;
+    font-size: 2.1rem;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 2px;
-    text-align: center;
+    line-height: 1.2;
+}
+
+.span-name{
+    color: #ec9a1e;
 }
 
 .button-aboutme{
@@ -198,25 +237,34 @@
   animation: gradientMove 5s ease-in-out infinite;
   cursor: pointer;
   margin-top: 20px ;
+  transition: 0.2s ease-in;
+}
+
+.button-aboutme:hover{
+    transform: scale(1.02);
+    border: #00eeff 1px solid;
 }
 
 
 /* PROYECTOS */
-.main-container-proyects{
+.main-container-projects{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.first-container-proyects{
-    width: 1230px;
-    height: auto;
+.first-container-projects{
     background-color: #27272A;
     border-radius: 15px;
-    padding: 30px;
+    width: 90%;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 30px;
 }
 
-.h1-proyects{
+.h1-projects{
     font-size: 90px;
     margin: 100px 0 20px 0;
     font-weight: 800;
@@ -235,7 +283,7 @@
   animation: gradientMove 5s ease-in-out infinite;
 }
 
-.container-proyects{
+.container-projects{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,6 +299,11 @@
     border: 1px solid rgba(255, 255, 255,0.1);
     background-color: #242323cc;
     border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+.project-card:hover{
+    transform: scale(1.02);
 }
 
 .img-project{
@@ -307,6 +360,11 @@
     background-color: #1db0bb;
     text-align: center;
     cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.btn-code:hover{
+    background-color: #1b949c;
 }
 
 .btn-demo{
@@ -321,15 +379,25 @@
     background-color: #ff0062;
     text-align: center;
     cursor: pointer;
+    transition: 0.1s ease-in;
 }
+
+.btn-demo:hover{
+    background-color: #b41a55;
+}
+
+button a{
+    color: #fff;
+}
+
 
 /* CONTACTO */
 .main-container-contact{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    padding: 47px;
 }
 
 .h1-contact{
@@ -352,7 +420,7 @@
 }
 
 .first-container-contact{
-    width: 1350px;
+    width: 75%;
     height: auto;
     background-color: #27272A;
     border-radius: 15px;
@@ -360,6 +428,7 @@
     display: flex;
     align-items: start;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .left-container-contact{
@@ -382,9 +451,12 @@
     border-radius: 10px;
     margin: 30px 0;
     background-color: #3534342f;
-
-
+    transition: 0.2s ease;
 }
+.contact-card:hover{
+    transform: rotateZ(2deg)
+}
+
 
 .icon-container-contact{
     background-color: #ff0062;
@@ -446,7 +518,6 @@
     padding: 5px;
     outline: none;
     color: #fff;
-
 }
 
 .form-group-textarea{
@@ -487,4 +558,427 @@ textarea{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.1s ease-in-out;
 }
+
+.btn-form:hover{
+    transform: scale(0.98);
+    background-color: #1db0bbd7;
+
+}
+
+/* Responsive */
+
+/* Móviles */
+@media (max-width: 540px) {
+    body{
+        overflow: scroll;
+    }
+    .container-portafolio{
+        flex-direction: column;
+    }
+
+    .container-nav{
+        position: relative;
+        width: 100%;
+    }
+
+    .container-nav-first{
+        display: none;
+    }
+
+    .container-nav-second{
+        display: none;
+    }
+
+    .container-nav-second-movil{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navlink{
+        margin: 10px 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255,0.2);
+        padding: 10px;
+    }
+
+    .container-nav-third{
+        display: none;
+    }
+
+    .container-main{
+        width: 100%;
+    }
+
+    .container-home{
+        width: 100%;
+    }
+
+    .title-name{
+        font-size: 2.5rem;
+    }
+
+    .subtitle-name{
+        font-size: 1.5rem;
+        margin-top: 30px;
+        padding: 20px 0;
+    }
+
+    .container-arrow{
+        margin:  auto;
+    }
+
+    .main-container-aboutme{
+        height: 100vh;
+    }
+
+    .first-container-aboutme{
+        width: 95%;
+        padding: 10px;
+        text-align: center;
+    }
+    .h1-aboutme{
+        font-size: 4rem;
+        margin: 30px 0 20px 0;
+    }
+
+    .p-aboutme{
+        font-size: 1rem;
+    }
+
+    .button-aboutme{
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .h1-projects{
+        font-size: 4rem;
+        margin: 30px 0 20px 0;
+    }
+
+    .container-projects{
+        width: 100%;
+    }
+
+    .project-card{
+        width: 320px;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .p-project{
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+        width: 250px;
+    }
+
+    .h1-contact{
+        font-size: 4rem;
+        margin: 30px 0 20px 0;        
+    }
+
+    .main-container-contact{
+        padding: 5px;
+    }
+    .first-container-contact{
+        width: 100%;
+        padding: 0;
+    }
+    .left-container-contact{
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-container-contact{
+        padding: 0;
+    }
+
+    .contact-form{
+        padding: 15px;
+    }
+}
+
+@media (min-width: 545px) and (max-width: 890px) {
+        body{
+        overflow: scroll;
+    }
+    .container-portafolio{
+        flex-direction: column;
+    }
+
+    .container-nav{
+        position: relative;
+        width: 100%;
+    }
+
+    .container-nav-first{
+        display: none;
+    }
+
+    .container-nav-second{
+        display: none;
+    }
+
+    .container-nav-second-movil{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navlink{
+        margin: 10px 15px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255,0.2);
+        padding: 10px;
+    }
+
+    .container-nav-third{
+        display: none;
+    }
+
+    .container-main{
+        width: 100%;
+    }
+
+    .container-home{
+        width: 100%;
+    }
+
+    .title-name{
+        font-size: 5rem;
+    }
+
+    .subtitle-name{
+        font-size: 3rem;
+        margin-top: 30px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    .container-arrow{
+        width: 40px;
+    }
+
+    .main-container-aboutme{
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+    }
+
+    .first-container-aboutme{
+        width: 95%;
+        padding: 30px;
+        text-align: center;
+    }
+    .h1-aboutme{
+        font-size: 6rem;
+        margin: 30px 0 20px 0;
+    }
+
+    .p-aboutme{
+        font-size: 1.8rem;
+    }
+
+    .button-aboutme{
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .h1-projects{
+        font-size: 6rem;
+        margin: 30px 0 20px 0;
+    }
+
+    .container-projects{
+        width: 100%;
+    }
+
+    .project-card{
+        width: 400px;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .p-project{
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+        width: 250px;
+    }
+
+    .h1-contact{
+        font-size: 6rem;
+        margin: 30px 0 20px 0;        
+    }
+
+    .main-container-contact{
+        padding: 5px;
+    }
+    .first-container-contact{
+        width: 100%;
+        padding: 0;
+    }
+    .left-container-contact{
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-container-contact{
+        padding: 0;
+    }
+
+    .contact-form{
+        padding: 30px;
+        width: 500px;
+    }
+}
+
+    @media (min-width: 900px) and (max-width: 1200px) {
+            body{
+            overflow: scroll;
+        }
+        .container-portafolio{
+            flex-direction: column;
+        }
+
+        .container-nav{
+            position: relative;
+            width: 100%;
+        }
+
+        .container-nav-first{
+            display: none;
+        }
+
+        .container-nav-second{
+            display: none;
+        }
+
+        .container-nav-second-movil{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navlink{
+            margin: 10px 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255,0.2);
+            padding: 10px;
+        }
+
+        .container-nav-third{
+            display: none;
+        }
+
+        .container-main{
+            width: 100%;
+        }
+
+        .container-home{
+            width: 100%;
+        }
+
+        .title-name{
+            font-size: 5rem;
+        }
+
+        .subtitle-name{
+            font-size: 3rem;
+            margin-top: 30px;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .first-container-aboutme{
+            width: 95%;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .h1-aboutme{
+            font-size: 6rem;
+            margin: 30px 0 20px 0;
+        }
+
+        .p-aboutme{
+            font-size: 1.8rem;
+        }
+
+        .button-aboutme{
+            font-size: 1.5rem;
+            padding: 15px;
+        }
+
+        .h1-projects{
+            font-size: 6rem;
+            margin: 30px 0 20px 0;
+        }
+
+        .container-projects{
+            width: 100%;
+        }
+
+        .project-card{
+            width: 400px;
+            align-items: center;
+            margin: 15px;
+        }
+
+        .p-project{
+            margin: auto;
+            text-align: center;
+            font-size: 0.8rem;
+            width: 250px;
+        }
+
+        .h1-contact{
+            font-size: 6rem;
+            margin: 30px 0 20px 0;        
+        }
+
+        .main-container-contact{
+            padding: 5px;
+            height: 100vh;
+        }
+        .first-container-contact{
+            width: 100%;
+            padding: 0;
+        }
+        .left-container-contact{
+            width: 100%;
+            padding: 0;
+        }
+
+        .right-container-contact{
+            padding: 0;
+        }
+
+        .contact-form{
+            padding: 30px;
+            width: 500px;
+        }
+    }
+
+
+
+    @media (max-width: 1280px) {
+        body{
+            overflow: scroll;
+        }
+
+        .main-container-aboutme{
+            height: 100%;
+        }
+        .container-arrow{
+            margin: auto;
+        }
+    }
+   
