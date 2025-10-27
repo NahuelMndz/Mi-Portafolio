@@ -1,0 +1,19 @@
+{
+  "title-name": "Hi! I'm Nahuel Menendez",
+  "subtitle-name": "Frontend Developer",
+  "about": "About me",
+  "p-aboutme": "I'm Nahuel Menendez from Santa Fe, Argentina. I enjoy transforming ideas into dynamic digital experiences, combining clean code with attractive and functional design. I currently specialize in React, JavaScript, HTML, and CSS, and I'm constantly learning new technologies to keep growing as a developer. My goal is to bring value to every project by creating creative, intuitive, and efficient solutions.",
+  "h1-tech": "Technologies",
+  "h1-project": "Projects",
+  "description-project1": "This project is a web page for a fictional e-commerce developed with React, JavaScript, and CSS. Its goal is to simulate a modern online store where users can explore products, view details, and add them to the cart. The product information is fetched from the Platzi Fake Store API, which provides real data such as prices, images, and descriptions.",
+  "btncode": "Code",
+  "description-project2": "This project is a web application that displays the weather in different cities across South America, developed with JavaScript, HTML, and CSS. It uses a public weather API to get up-to-date data such as temperature, humidity, and real-time weather conditions. Users can select a country and search for a city to view detailed information.",
+  "h1-contact": "Contact",
+  "h3-networks": "My networks",
+  "h3-sendme": "Send me a message",
+  "form-name": "Your name",
+  "form-email": "Your email",
+  "formTextarea": "Write a message...",
+  "btnForm": "Send message",
+  "footer": "© 2025 Developed by Nahuel Menendez"
+}

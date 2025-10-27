@@ -1,0 +1,19 @@
+{
+  "title-name": "Hola! soy Nahuel Menendez",
+  "subtitle-name": "Desarrollador frontend",
+  "about": "Sobre mí",
+  "p-aboutme":"Soy Nahuel Menendez de Santa fe, Argentina. Disfruto transformar ideas en experiencias digitales dinámicas, combinando código limpio con un diseño atractivo y funcional. Actualmente me especializo en React, JavaScript, HTML y CSS, y busco constantemente aprender nuevas tecnologías para seguir creciendo como desarrollador. Mi objetivo es aportar valor en cada proyecto creando soluciones creativas, intuitivas y eficientes.",
+  "h1-tech": "Tecnologias",
+  "h1-project": "Proyectos",
+  "description-project1": "Este proyecto es una página web de un e-commerce ficticio desarrollada con React, JavaScript y CSS. Su objetivo es simular una tienda online moderna, donde los usuarios pueden explorar productos, ver sus detalles y agregarlos al carrito. La informacion de los productos se obtiene desde una API pública de Platzi Fake Store API, lo que permite mostrar datos reales como precios, imágenes y descripciones.",
+  "btncode": "Código",  
+  "description-project2": "Este proyecto es una aplicación web que muestra el clima en distintas ciudades de América del Sur, desarrollada con JavaScript, HTML y CSS Utiliza una API pública de clima para obtener datos actualizados como temperatura, humedad, y condiciones meteorológicas en tiempo real. El usuario puede seleccionar un país y buscar una ciudad para ver su información detallada.",
+  "h1-contact": "Contacto",
+  "h3-networks": "Mis redes",
+  "h3-sendme": "Envíame un mensaje",
+  "form-name": "Tu Nombre",
+  "form-email": "Tu correo",
+  "formTextarea": "Escribe un mensaje...",
+  "btnForm": "Enviar mensaje",
+  "footer": "© 2025 Desarrollado by Nahuel Menendez"
+}

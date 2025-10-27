@@ -7,5 +7,14 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none; 
+    scroll-behavior: smooth;
+}
 
+html{
+    color: #fff;
+    
+}
+    
+a{
+    color: #fff;
 }
