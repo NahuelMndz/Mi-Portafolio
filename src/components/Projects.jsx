@@ -11,8 +11,6 @@ import tailwind from '/Images/Tailwind.svg';
 import vsCode from '/Images/VS.svg';
 import javascript from '/Images/JavaScript.svg';
 import { useTranslation } from 'react-i18next';
-
-
 import React from 'react'
 import js from '@eslint/js';
 
