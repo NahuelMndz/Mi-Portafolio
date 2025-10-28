@@ -16,7 +16,6 @@ i18n
     interpolation: { escapeValue: false },
   });
 
-// Guarda el idioma cuando cambia
 i18n.on("languageChanged", (lang) => {
   localStorage.setItem("lang", lang);
 });

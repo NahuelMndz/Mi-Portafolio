@@ -1,4 +1,3 @@
-import React from "react";
 import "./AnimatedBackground.css";
 
 export default function AnimatedBackground() {
