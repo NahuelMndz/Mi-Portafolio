@@ -5,8 +5,6 @@ Este es mi primer portafolio, es mi espacio para mostrar proyectos, habilidades 
 
 ⚡ Tecnologías y herramientas que use.
 
-Frontend: React, JavaScript, HTML, CSS
-Herramientas: Vite, Git, GitHub Pages
-Diseño: Responsive, Mobile-first, Animaciones con CSS
+Frontend: React, JavaScript, HTML, CSS - Herramientas: Vite, Git, GitHub Pages - Diseño: Responsive, Mobile-first, Animaciones con CSS
 
 Podés ver el portafolio funcionando aquí: https://nahuelmndz.github.io/Mi-Portafolio/
