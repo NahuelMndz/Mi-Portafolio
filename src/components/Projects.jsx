@@ -63,8 +63,8 @@ function Projects() {
               <span className='tech'><img src={javascript} alt="js" /></span>
             </div>
             <div className='container-buttons-project'>
-              <button style={{background: "#e4587b"}} className='btn-card'><FontAwesomeIcon icon={faGithub}/><a href="https://github.com/NahuelMndz/web-TiempoSur">{t("btncode")}</a></button>
-              <button style={{background: "#3ab98f"}} className='btn-card'><FontAwesomeIcon icon={faEye} /> <a href="https://nahuelmndz.github.io/web-TiempoSur/">Demo</a></button>
+              <button style={{background: "#e4587b"}} className='btn-card'><FontAwesomeIcon icon={faGithub}/><a href="https://github.com/NahuelMndz/TiempoSur">{t("btncode")}</a></button>
+              <button style={{background: "#3ab98f"}} className='btn-card'><FontAwesomeIcon icon={faEye} /> <a href="https://tiemposur.netlify.app/">Demo</a></button>
             </div>
           </div>
           </div>

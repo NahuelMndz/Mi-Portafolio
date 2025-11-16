@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import cv from '../assets/Nahuel-Menendez-cv.pdf'
-import React from 'react'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
